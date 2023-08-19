@@ -39,7 +39,7 @@ public class NegativeTests {
         String actualErrorMessage = errorMessage.getText();
         Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage), "Actual error message does not contain expected");
 
-        driver.close();
+        driver.quit();
         System.out.println("Test finished");
 
 
