@@ -4,6 +4,8 @@
 
 
     <test name="PositiveTests" >
+        <parameter name="browser"  value="chrome"/>
+
         <groups>
             <run>
                 <include name="positiveTests"></include>
@@ -16,6 +18,7 @@
 
 
     <test name="NegativeUsernameTest">
+        <parameter name="browser"  value="crome"/>
         <parameter name="username"  value="incorrectUsername"/>
         <parameter name="password"  value="SuperSecretPassword!"/>
         <parameter name="expectedErrorMessage"  value="Your username is invalid!"/>
@@ -29,6 +32,7 @@
     </test>
 
     <test name="NegativePasswordTest">
+        <parameter name="browser"  value="firefox"/>
         <parameter name="username"  value="tomsmith"/>
         <parameter name="password"  value="IncorrectPassword!"/>
         <parameter name="expectedErrorMessage"  value="Your password is invalid!"/>
