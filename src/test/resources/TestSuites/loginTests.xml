@@ -18,7 +18,7 @@
 
 
     <test name="NegativeUsernameTest">
-        <parameter name="browser"  value="crome"/>
+        <parameter name="browser"  value="chrome"/>
         <parameter name="username"  value="incorrectUsername"/>
         <parameter name="password"  value="SuperSecretPassword!"/>
         <parameter name="expectedErrorMessage"  value="Your username is invalid!"/>
@@ -30,6 +30,22 @@
             </class>
         </classes>
     </test>
+
+
+    <test name="ExceptionsTests">
+        <parameter name="browser"  value="chrome"/>
+
+        <groups>
+            <run>
+                <include name="ExceptionsTests"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.herokuapp.theinternet.ExceptionsTests" />
+        </classes>
+    </test>
+
+
 
     <test name="NegativePasswordTest">
         <parameter name="browser"  value="firefox"/>
